@@ -115,14 +115,23 @@ else
   echo "."
 fi
 echo
-bestServer_meta_IP="$(echo $regionData | jq -r '.servers.meta[0].ip')"
-bestServer_meta_hostname="$(echo $regionData | jq -r '.servers.meta[0].cn')"
-bestServer_WG_IP="$(echo $regionData | jq -r '.servers.wg[0].ip')"
-bestServer_WG_hostname="$(echo $regionData | jq -r '.servers.wg[0].cn')"
-bestServer_OT_IP="$(echo $regionData | jq -r '.servers.ovpntcp[0].ip')"
-bestServer_OT_hostname="$(echo $regionData | jq -r '.servers.ovpntcp[0].cn')"
-bestServer_OU_IP="$(echo $regionData | jq -r '.servers.ovpnudp[0].ip')"
-bestServer_OU_hostname="$(echo $regionData | jq -r '.servers.ovpnudp[0].cn')"
+# bestServer_meta_IP="$(echo $regionData | jq -r '.servers.meta[0].ip')"
+# bestServer_meta_hostname="$(echo $regionData | jq -r '.servers.meta[0].cn')"
+# bestServer_WG_IP="$(echo $regionData | jq -r '.servers.wg[0].ip')"
+# bestServer_WG_hostname="$(echo $regionData | jq -r '.servers.wg[0].cn')"
+# bestServer_OT_IP="$(echo $regionData | jq -r '.servers.ovpntcp[0].ip')"
+# bestServer_OT_hostname="$(echo $regionData | jq -r '.servers.ovpntcp[0].cn')"
+# bestServer_OU_IP="$(echo $regionData | jq -r '.servers.ovpnudp[0].ip')"
+# bestServer_OU_hostname="$(echo $regionData | jq -r '.servers.ovpnudp[0].cn')"
+
+bestServer_meta_IP="46.246.3.37"
+bestServer_meta_hostname="stockholm402"
+bestServer_WG_IP="195.246.120.47"
+bestServer_WG_hostname="stockholm402"
+bestServer_OT_IP="195.246.120.73"
+bestServer_OT_hostname="stockholm402"
+bestServer_OU_IP="195.246.120.56"
+bestServer_OU_hostname="stockholm402"
 
 echo "The script found the best servers from the region closest to you.
 When connecting to an IP (no matter which protocol), please verify
